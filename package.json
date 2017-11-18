@@ -1,0 +1,58 @@
+{
+  "_args": [
+    [
+      "stevit",
+      "/home/stevan/server"
+    ]
+  ],
+  "_from": "server@latest",
+  "_location": "/server",
+  "_nodeVersion": "4.2.6",
+  "_npmVersion": "3.5.2",
+  "_requested": {
+    "name": "server",
+    "raw": "server",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_spec": "server",
+  "_where": "/home/stevan/server",
+  "dependencies": {
+    "colors": "1.1.2",
+    "is-wsl": "1.1.0",
+    "opn": "5.1.0"
+  },
+  "description": "Official Stevit development server solution",
+  "maintainers": [
+    "Stevan Marjanovic <marjanovicstevan02@gmail.com>"
+  ],
+  "name": "@marjanovicsteva/stevit-server",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "bin": {
+    "stevit-server": "./server.js"
+  },
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marjanovicsteva/stevit-server.git"
+  },
+  "keywords": [
+    "Server",
+    "Development",
+    "Web",
+    "HTTP",
+    "Stevit"
+  ],
+  "author": "Stevan Marjanovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marjanovicsteva/stevit-server/issues"
+  },
+  "homepage": "https://github.com/marjanovicsteva/stevit-server#readme"
+}
