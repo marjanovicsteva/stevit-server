@@ -2,8 +2,6 @@
 The official Stevit development server soltion.
 A simple HTTP server created using NodeJS and published through Node Package Manager.
 
-------------------------------------------------
-
 ## Usage
 
 Syntax: `stevit-server [options]`
