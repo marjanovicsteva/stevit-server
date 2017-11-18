@@ -19,7 +19,7 @@ Available options:
 ## Installation
 
 ```shell
-$ npm i @marjanovicsteva/stevit-server
+$ npm install @marjanovicsteva/stevit-server
 ```
 
 To add this npm package to your local machine, type the above into your command line. You’ll notice a node_modules directory appear in your root where the package is now installed.
