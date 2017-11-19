@@ -26,24 +26,27 @@ for (var i = 2; i < process.argv.length; i++) {
       ''
     ].join('\n'));
     startServer = false;
-  }
-
-  if (option == "--port" || option == "-p") {
-    port = Number(process.argv[i+1]);
-  }
-
-  if (option == "--open" || option == "-o") {
+  } else if (option == "--port" || option == "-p") {
+    if (Number(process.argv[i+1]).toString() == "NaN") {
+      port = Number(process.argv[i+1]);
+      startServer = false;
+      console.error("ERROR: Server failed to start".red);
+      console.log("Invalid value for port.");
+    } else {
+      console.log("NaNnnnnnnn");
+    }
+  } else if (option == "--open" || option == "-o") {
     openBrowser = true;
+  } else {
+    console.error("Invalid option: " + option);
+    console.log("Type `stevit-server --help` for more information about available options.");
+    startServer = false;
   }
 }
 
 if (startServer == true) {
   var server = http.createServer(function(req, res) {
-    res.write([
-      'Server Started',
-      'Port number: ' + port,
-      'Open: ' + openBrowser,
-    ].join('\n'));
+    res.write(process.cwd);
     res.end();
   });
 
@@ -67,3 +70,4 @@ if (startServer == true) {
   server.listen(port);
 
 }
+
